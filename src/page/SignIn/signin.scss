@@ -1,0 +1,204 @@
+.signin-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+
+    .signin-section1 {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        height: 100%;
+
+        .logo {
+            font-family: 'Montserrat',sans-serif;
+            font-size: 72px;
+            font-weight: 700;
+            color: white;
+          }
+      }
+
+      .signin-section2 {
+        flex: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        background-color: #f1f1f1;
+
+        .signin-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+
+            .signin-heading {
+                width: 100%;
+                margin-bottom: 10px;
+                font-family: 'Montserrat',sans-serif;
+                font-size: 36px;
+                font-weight: 700;
+                text-align: left;
+              }
+              
+              .signin-subheading {
+                width: 100%;
+                margin-bottom: 30px;
+                font-family: 'Lato',sans-serif;
+                font-size: 16px;
+                color: #666;
+                font-weight: 400;
+                text-align: left;
+
+              }
+              .signin-buttons {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 10px;
+                margin-bottom: 30px;
+                 
+                .signin-button {
+                    padding: 10px 20px;
+                    border: none;
+                    cursor: pointer;
+                    background-color: white;
+                    border-radius: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #858585;
+                    gap: 10px;
+                }
+
+              }
+              .signin-form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+              background-color: white;
+                padding: 20px;
+                width: 80%;
+                border-radius: 10px;
+                min-width: 400px;
+
+                label{
+                    width: 100%;
+                    font-family: 'Lato', sans-serif;
+                    font-size: 16px;
+                    font-weight: 400;
+                    text-align: left;
+                }
+
+                input {
+                    width: 100%;
+                    padding: 10px 20px;
+                    border: none;
+                    outline: none;
+                    background-color: #f1f1f1;
+                    border-radius: 10px;
+                    font-family: Lato;
+                    font-size: 16px;
+                    font-weight: 400;
+                    text-align: left;
+                    color: #000000;
+                  }
+                  
+                  .forgot-password {
+                    width: 100%;
+                    color: #346BD4;
+                    text-align: left;
+                    font-family: 'Lato', sans-serif;
+                    font-size: 16px;
+                    font-weight: 400;
+                  }
+                  
+                  .signin-submit {
+                    width: 100%;
+                    padding: 10px 20px;
+                    background-color: black;
+                    color: white;
+                    border: none;
+                    cursor: pointer;
+                    border-radius: 10px;
+                    font-family: Montserrat;
+                    font-size: 16px;
+                    font-weight: 700;
+                    text-align: center;
+
+                  }
+                  
+              }
+              .register-text {
+                margin-top: 30px;
+                text-align: center;
+                font-family: 'Lato', sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+              }
+              
+              .register-text a {
+                color:  #346BD4;
+                text-decoration: none;
+                font-family: 'Lato', sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+              }
+          }
+
+      }
+  }
+  
+  @media screen and (max-width:768px){
+    .signin-container {
+        flex-direction: column;
+        .signin-section1{
+            flex: 1;
+            width: 100%;
+
+        }
+        .signin-section2{
+            flex: 1;
+            width: 100%;
+
+            .signin-content {
+                height: 100%;
+    
+                .signin-heading {
+                    margin-top: 20px;
+                    text-align: center;
+                  }
+                  
+                  .signin-subheading {
+                    text-align: center;
+    
+                  }
+                  .signin-buttons {
+                    padding: 0px 30px;
+                     
+                    .signin-button {
+                        padding: 10px 12px;
+                        gap: 5px;
+                    }
+    
+                  }
+                  .signin-form {
+                    width: 100%;
+
+                    
+                      .forgot-password {
+                        text-align: center;
+
+                      }   
+                  }
+
+        }
+    }
+  }
+}

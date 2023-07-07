@@ -1,0 +1,237 @@
+.twoCards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:40px;
+    width: 100%;
+    
+    .products-card{
+        width: 50%;
+        height: 300px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: rgba(239,250, 230,0.7) 0px 8px 24px;
+
+        .products-title{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            p{
+                font-family: 'Montserrat', sans-serif;
+                font-size: 18px;
+                font-weight: 700;
+            }
+            span{
+                font-family: 'Montserrat', sans-serif;
+                font-size: 14px;
+                font-weight: 400;
+                color: #858585;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 5px;
+            }
+        }
+        .products-pieChart{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap:40px;
+
+            .pieChart{
+                width: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              
+            }
+            .pieChart-Info{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                justify-content: center;
+                gap: 20px;
+                .one{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 10px;
+
+                    .bullet{
+                        height: 8px;
+                        width: 8px;
+                        border-radius: 5px;
+                        background-color: #0088FE;
+                    }
+                    div{
+                        font-family: 'Montserrat', sans-serif;
+                            font-size: 14px;
+                            font-weight: 700;
+                        span{
+                            font-family: 'Lato', sans-serif;
+                            font-size: 12px;
+                            font-weight: 400;
+                            color: #858585;
+                        }
+                    }
+                }
+                .two{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 10px;
+
+                    .bullet{
+                        height: 8px;
+                        width: 8px;
+                        border-radius: 5px;
+                        background-color: #00C49F;
+                    }
+                    div{
+                        font-family: 'Montserrat', sans-serif;
+                            font-size: 14px;
+                            font-weight: 700;
+                        span{
+                            font-family: 'Lato', sans-serif;
+                            font-size: 12px;
+                            font-weight: 400;
+                            color: #858585;
+                        }
+                    }
+                }
+                .three{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 10px;
+
+                    .bullet{
+                        height: 8px;
+                        width: 8px;
+                        border-radius: 5px;
+                        background-color: #FFBB28;
+                    }
+                    div{
+                        font-family: 'Montserrat', sans-serif;
+                            font-size: 14px;
+                            font-weight: 700;
+                        span{
+                            font-family: 'Lato', sans-serif;
+                            font-size: 12px;
+                            font-weight: 400;
+                            color: #858585;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .schedule-card{
+        width: 50%;
+        height: 300px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        gap: 40px;
+        border-radius: 10px;
+        background-color: white;
+          box-shadow: rgba(239,250, 230,0.7) 0px 8px 24px;
+
+        .schedule-title{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            p{
+                font-family: 'Montserrat', sans-serif;
+                font-size: 18px;
+                font-weight: 700;
+            }
+            span{
+                font-family: 'Montserrat', sans-serif;
+                font-size: 14px;
+                font-weight: 400;
+                color: #858585;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 5px;
+            }
+        }
+        .schedule-info{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 20px;
+            .schedule-info-one,
+            .schedule-info-two{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+
+                div{
+                    h4{
+                        font-family: 'Lato', sans-serif;
+                            font-size: 14px;
+                            font-weight: 700;
+                    }
+                    p,span{
+                        font-family: 'Lato', sans-serif;
+                            font-size: 12px;
+                            font-weight: 400;
+                            color: #999999;
+                    }
+                }
+            }
+            .schedule-info-one{
+                .border-right{
+                    height: 60px;
+                    width: 5px;
+                    background-color: #9BDD7C;
+
+                }
+            }
+            .schedule-info-two{
+                .border-right{
+                    height: 60px;
+                    width: 5px;
+                    background-color: #6972C3;
+
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px){
+    .twoCards{
+        flex-direction: column;
+    
+    .products-card{
+        width: 100%;
+
+        .products-pieChart{
+            flex-direction: column;
+            gap: 0;
+
+            .pieChart-Info{
+                width: 100%;
+                gap: 10px;
+                flex-direction: row;
+            }
+        }
+    }
+    .schedule-card{
+       width: 100%;
+    }
+}
+}

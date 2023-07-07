@@ -1,0 +1,56 @@
+.home{
+    display: flex;
+    gap:40px;
+    padding: 20px;
+    background-color: #F5F5F5;
+
+    .home-left{
+        // min-height: 100vh;
+        flex: 1;
+        border-radius: 10px;
+        background-color: black;
+    }
+
+    .home-right{
+        flex:4;
+        padding: 20px;
+        background-color: #F5F5F5;
+        // background-color: yellow;
+        // .home-navbar{
+            
+        // }
+        .home-cards{
+            margin-top: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .home-chart{
+            margin-top: 40px;
+        }
+        .home-twoCards{
+            margin-top: 40px;
+        }
+    }
+}
+
+@media screen and (max-width:768px){
+    .home{
+        flex-direction: column;
+        padding: 0px;
+        gap: 20px;
+
+        .home-left{
+            border-radius: 0px;
+        }
+
+        .home-right{
+            padding: 20px;
+            .home-cards{
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    }
+}
